@@ -71,7 +71,7 @@ pytorch, but here this is the same, if you are interested, you can do it by your
 line54 change the path  
   
 ### plot.py
-plot the results and pose transfer (but a long time ago, u can just use the euler angle in folder 'data')  
+plot the results and pose transfer
 line131  
 line158-line163  
   
@@ -80,9 +80,6 @@ IDE pycharm
 python 3.6  
 Ubuntu 18.04  
 Cuda 10.2, V10.2.89  
-source ~/path_to_your_environment_folder/venv/bin/activate  
-cd path_to_your_folder/lstmvo  
-export PYTHONPATH=/home/yourname/path_to_your_environment_folder/venv/lib/python3.6/site-packages  
   
 ## D. Packages  
 package - version - latest version(2020)  
