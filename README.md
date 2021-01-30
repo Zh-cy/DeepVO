@@ -14,8 +14,8 @@ rel_mat: generated relative pose matrix
 
 ### KITTI_odometry_evaluation_tool
 origin: https://github.com/LeoQLi/KITTI_odometry_evaluation_tool  
-just make some changes  
-this is to to evaluate your result quantitatively  
+
+this is to to evaluate results quantitatively  
 changes:  
 KITTI_odometry_evaluation_tool/evaluation.py  
 line31 change that folder  
@@ -55,14 +55,7 @@ line18 change the folder you wanna save your predicted results
 line42 - line54  
   
 ### loss_plot.py
-first download the .csv files from tensorboard  
-  
-in terminal
-source ~/path_to_your_environment_folder/venv/bin/activate  
-cd path_to_your_folder/lstmvo  
-export PYTHONPATH=/home/yourname/path_to_your_environment_folder/venv/lib/python3.6/site-packages  
-tensorboard --logdir=logs_lstm  
-  
+first download the .csv files from tensorboard    
 line41 - line45  
   
 ### model.py
