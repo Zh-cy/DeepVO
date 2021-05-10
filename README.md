@@ -1,5 +1,5 @@
 # DeepVO
-Keras implementation of DeepV:Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks
+Keras implementation of DeepVO:Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks
 
 ## A. Basic Information
 This is the paper reproduce part of my master thesis in MRT KIT (2019-2020)  
