@@ -1,14 +1,24 @@
 # DeepVO
 Keras implementation of DeepVO:Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks
 
-## A. Basic Information
+Basic Information
+------------------------------
 This is the paper reproduce part of my master thesis in MRT KIT (2019-2020)  
 
 **Original Paper**:
 
 [DeepVO: Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks](https://arxiv.org/abs/1709.08429)
 
-## B. Structure
+About my Work
+------------------------------
+* ### Structure
+<div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/cclvo.png" height="415" width="855"/> </div> 
+
+* ### Demo (compared with VISO-Mono)
+
+
+Details
+------------------------------
 * ### data
 euler_angle: generated euler angles (left hand, angle in degree) right hand system also works if you want  
 poses: ground truth provided by KITTI  
@@ -70,24 +80,25 @@ plot the results and pose transfer
 line131  
 line158-line163  
   
-## C.Environment  
+Environment  
+------------------------------
 IDE pycharm  
 python 3.6  
 Ubuntu 18.04  
 Cuda 10.2, V10.2.89  
-  
-## D. Packages   
-Keras	2.3.1
-Pillow	6.2.1
-matplotlib	3.1.1
-numpy	1.17.3  
-opencv-python	4.1.1.26
-pip	19.0.3 
-pytorch2keras	0.2.4
-tensorboard	1.14.0
-tensorflow	1.14.0
 
-  
+Keras	2.3.1  
+Pillow	6.2.1  
+matplotlib	3.1.1  
+numpy	1.17.3  
+opencv-python	4.1.1.26  
+pip	19.0.3  
+pytorch2keras	0.2.4  
+tensorboard	1.14.0  
+tensorflow	1.14.0  
+
+Experiments  
+------------------------------
 Experiment a: DeepVO (baseline, reproduction work)  
 Experiment b (control group, module1 test work)  
 Experiment c (control group, module2 test work)  
