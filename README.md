@@ -26,7 +26,7 @@ poses: ground truth provided by KITTI
 rel_mat: generated relative pose matrix  
 
 * ### KITTI_odometry_evaluation_tool
-origin: https://github.com/LeoQLi/KITTI_odometry_evaluation_tool  
+**origin**: https://github.com/LeoQLi/KITTI_odometry_evaluation_tool  
 
 this is to to evaluate results quantitatively  
 changes:  
@@ -42,13 +42,11 @@ I have also tried bidirectional lstm, but it doesn't converge. I didn't delete t
 read the parser arguments before training  
 examples of different mode:  
 a.train from start  
-python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100  
-                    --initial_epoch 1 --dropout 0.5 --beta 50 --gpu 2  
+python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --initial_epoch 1 --dropout 0.5 --beta 50 --gpu 2  
 (this is the option that I used)  
 
 b.resume training (eg. interrupted at epoch 45)  
-python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --resume 1  
-                    --initial_epoch 45 --cnn_lstm_weights cnn_lstm_weight.45-x.xxxx.h5 --dropout 0.5 --beta 50 --gpu 2  
+python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --resume 1 --initial_epoch 45 --cnn_lstm_weights cnn_lstm_weight.45-x.xxxx.h5 --dropout 0.5 --beta 50 --gpu 2  
 
 
 * ### dp_pre.py
@@ -59,8 +57,7 @@ chose the best one or best several weights, move them into your prediction folde
 first download the .csv files from tensorboard    
   
 * ### model.py
-download the pretrained weights, attention this is the file that I convert from pytorch into Keras, originally it is for  
-pytorch, but here this is the same, if you are interested, you can do it by your self    
+download the pretrained weights, attention this is the file that I convert from pytorch into Keras, originally it is for pytorch, but here this is same
   
 * ### plot.py
 plot the results and pose transfer
