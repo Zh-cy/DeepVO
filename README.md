@@ -3,16 +3,18 @@ Keras implementation of DeepVO:Towards End-to-End Visual Odometry with Deep Recu
 
 ## A. Basic Information
 This is the paper reproduce part of my master thesis in MRT KIT (2019-2020)  
-Paper  
-DeepVO: Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks  
+
+**Original Paper**:
+
+[DeepVO: Towards End-to-End Visual Odometry with Deep Recurrent Convolutional Neural Networks](https://arxiv.org/abs/1709.08429)
 
 ## B. Structure
-### data
+* ### data
 euler_angle: generated euler angles (left hand, angle in degree) right hand system also works if you want  
 poses: ground truth provided by KITTI  
 rel_mat: generated relative pose matrix  
 
-### KITTI_odometry_evaluation_tool
+* ### KITTI_odometry_evaluation_tool
 origin: https://github.com/LeoQLi/KITTI_odometry_evaluation_tool  
 
 this is to to evaluate results quantitatively  
@@ -21,12 +23,12 @@ KITTI_odometry_evaluation_tool/evaluation.py
 line31 change that folder  
 line657 change that folder  
 
-### dataset.py
+* ### dataset.py
 chose your sequences to train or to test  
 line33  
 line134  
 
-### dp_train.py
+* ### dp_train.py
 before training make a checkpoint saving folder to save the checkpoints like 1_lstm, 2_lstm...  
 I have also tried bidirectional lstm, but it doesn't converge. I didn't delete this module, so you can still make a test  
   
@@ -46,24 +48,24 @@ linie56 change ground truth euler angles folder
 line70 change the folder you wanna save your weights -- checkpoint_path  
 
 
-### dp_pre.py
+* ### dp_pre.py
 before training make a prediction folder  1_lstm, 2_lstm... (use a different path compared to the path where you save your checkpoints, but same folder name)  
 chose the best one or best several weights, move them into your prediction folder  
 line18 change the folder you wanna save your predicted results  
   
-### evaluation.py 
+* ### evaluation.py 
 line42 - line54  
   
-### loss_plot.py
+* ### loss_plot.py
 first download the .csv files from tensorboard    
 line41 - line45  
   
-### model.py
+* ### model.py
 download the pretrained weights, attention this is the file that I convert from pytorch into Keras, originally it is for  
 pytorch, but here this is the same, if you are interested, you can do it by your self  
 line54 change the path  
   
-### plot.py
+* ### plot.py
 plot the results and pose transfer
 line131  
 line158-line163  
