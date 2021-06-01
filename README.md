@@ -13,7 +13,7 @@ About my Work
 ------------------------------
 
 * ### Demo (compared with VISO-Mono)
-<div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/demo.gif" height="750" width="705" /> </div>
+<div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/demo.gif" height="500" width="470" /> </div>
 
 * ### Structure
 <div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/cclvo.png" height="415" width="855"/> </div> 
@@ -31,13 +31,9 @@ origin: https://github.com/LeoQLi/KITTI_odometry_evaluation_tool
 this is to to evaluate results quantitatively  
 changes:  
 KITTI_odometry_evaluation_tool/evaluation.py  
-line31 change that folder  
-line657 change that folder  
 
 * ### dataset.py
-chose your sequences to train or to test  
-line33  
-line134  
+chose your sequences to train or to test   
 
 * ### dp_train.py
 before training make a checkpoint saving folder to save the checkpoints like 1_lstm, 2_lstm...  
@@ -53,38 +49,26 @@ python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay
 b.resume training (eg. interrupted at epoch 45)  
 python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --resume 1  
                     --initial_epoch 45 --cnn_lstm_weights cnn_lstm_weight.45-x.xxxx.h5 --dropout 0.5 --beta 50 --gpu 2  
-line39 change tensorboard folder  
-line54 change input images folder  
-linie56 change ground truth euler angles folder  
-line70 change the folder you wanna save your weights -- checkpoint_path  
 
 
 * ### dp_pre.py
 before training make a prediction folder  1_lstm, 2_lstm... (use a different path compared to the path where you save your checkpoints, but same folder name)  
-chose the best one or best several weights, move them into your prediction folder  
-line18 change the folder you wanna save your predicted results  
-  
-* ### evaluation.py 
-line42 - line54  
+chose the best one or best several weights, move them into your prediction folder    
   
 * ### loss_plot.py
 first download the .csv files from tensorboard    
-line41 - line45  
   
 * ### model.py
 download the pretrained weights, attention this is the file that I convert from pytorch into Keras, originally it is for  
-pytorch, but here this is the same, if you are interested, you can do it by your self  
-line54 change the path  
+pytorch, but here this is the same, if you are interested, you can do it by your self    
   
 * ### plot.py
 plot the results and pose transfer
-line131  
-line158-line163  
+
   
 Environment  
 ------------------------------
-IDE pycharm  
-python 3.6  
+Python 3.6  
 Ubuntu 18.04  
 Cuda 10.2, V10.2.89  
 
