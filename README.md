@@ -14,7 +14,7 @@ This is the paper reproduce part of my master thesis in MRT KIT (2019-2020)
 About my Work
 ------------------------------
 
-* ### Demo (compared with VISO-Mono)
+* ### Demo (compared with VISO2-Mono)
 <div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/demo.gif" height="500" width="470" /> </div>
 
 * ### Structure
