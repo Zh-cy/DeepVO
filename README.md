@@ -11,11 +11,12 @@ This is the paper reproduce part of my master thesis in MRT KIT (2019-2020)
 
 About my Work
 ------------------------------
-* ### Structure
-<div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/cclvo.png" height="415" width="855"/> </div> 
 
 * ### Demo (compared with VISO-Mono)
 <div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/demo.gif" height="750" width="705" /> </div>
+
+* ### Structure
+<div align=left><img src="https://raw.githubusercontent.com/Zh-cy/images/master/DeepVO/cclvo.png" height="415" width="855"/> </div> 
 
 Details
 ------------------------------
