@@ -74,60 +74,17 @@ python 3.6
 Ubuntu 18.04  
 Cuda 10.2, V10.2.89  
   
-## D. Packages  
-package - version - latest version(2020)  
-Keras	2.3.1	2.4.3  
-Keras-Applications	1.0.8	1.0.8  
-Keras-Preprocessing	1.1.0	1.1.2  
-Markdown	3.1.1	3.3.3  
-Pillow	6.2.1	8.0.1  
-PyYAML	5.1.2	5.3.1  
-Pygments	2.4.2	2.7.2  
-Werkzeug	0.16.0	1.0.1  
-absl-py	0.8.1	0.11.0  
-argcomplete	1.10.0	1.12.2  
-astor	0.8.0	0.8.1  
-colorama	0.4.1	0.4.4  
-cycler	0.10.0	0.10.0  
-evo	1.5.6	1.13.0  
-future	0.18.2	0.18.2  
-gast	0.3.2	0.4.0  
-google-pasta	0.1.7	0.2.0  
-grpcio	1.24.1	1.33.2  
-h5py	2.10.0	3.1.0  
-joblib	0.14.0	0.17.0  
-kiwisolver	1.1.0	1.3.1  
-matplotlib	3.1.1	3.3.3  
-natsort	6.0.0	7.1.0  
-numpy	1.17.3	1.19.4  
-onnx	1.7.0	1.8.0  
-onnx2keras	0.0.22 0.0.24  
-opencv-python	4.1.1.26	4.4.0.46  
-pandas	0.25.2	1.1.4  
-pip	19.0.3	20.2.4  
-protobuf	3.10.0	3.14.0  
-pydot	1.4.1	1.4.1  
-pyparsing	2.4.2	2.4.7  
-pyquaternion	0.9.5	0.9.9  
-python-dateutil	2.8.0	2.8.1  
-pytorch2keras	0.2.4	0.2.4  
-pytz	2019.3	2020.4  
-scikit-learn	0.21.3	0.23.2  
-scipy	1.3.1	1.5.4  
-seaborn	0.9.0	0.11.0  
-setuptools	41.4.0	50.3.2  
-six	1.12.0	1.15.0  
-sklearn	0.0	0.0  
-tensorboard	1.14.0	2.4.0  
-tensorflow	1.14.0	2.3.1  
-tensorflow-estimator	1.14.0	2.3.0  
-tensorflow-gpu	1.14.0	2.3.1  
-termcolor	1.1.0	1.1.0  
-torch	1.6.0	1.7.0  
-torchvision	0.7.0	0.8.1  
-typing-extensions	3.7.4.2	3.7.4.3  
-wheel	0.33.6	0.35.1  
-wrapt	1.11.2	1.12.1  
+## D. Packages   
+Keras	2.3.1
+Pillow	6.2.1
+matplotlib	3.1.1
+numpy	1.17.3  
+opencv-python	4.1.1.26
+pip	19.0.3 
+pytorch2keras	0.2.4
+tensorboard	1.14.0
+tensorflow	1.14.0
+
   
 Experiment a: DeepVO (baseline, reproduction work)  
 Experiment b (control group, module1 test work)  
