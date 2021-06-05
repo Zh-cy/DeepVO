@@ -58,7 +58,7 @@ Environment
 ------------------------------
 * Python 3.6  
 * Ubuntu 18.04  
-* Cuda 10.2, V10.2.89  
+* Cuda 10.2  
 
 * Keras	2.3.1  
 * Pillow	6.2.1  
