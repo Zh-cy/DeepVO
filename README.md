@@ -30,8 +30,8 @@ Data
 train & test
 ------------------------------
 * dp_train.py  
-  before training make a checkpoint saving folder to save the checkpoints like 1_lstm, 2_lstm...  
-  I have also tried bidirectional lstm, but it doesn't converge. I didn't delete this module, so you can still make a test  
+  before training I will create a checkpoint saving folder to save the checkpoints like 1_lstm, 2_lstm...  
+  I have tried bidirectional lstm, but it doesn't converge. I didn't delete this module, so you can still make a test  
   
     * *train from start*  
     python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --initial_epoch 1 --dropout 0.5 --beta 50 --gpu 2  
@@ -41,7 +41,7 @@ train & test
     python3 dp_train.py --folder 1 --lr_base 0.0001 --epoch_max 100 --epoch_lr_decay 100 --resume 1 --initial_epoch 45 --cnn_lstm_weights cnn_lstm_weight.45-x.xxxx.h5 --dropout  0.5 --beta 50 --gpu 2  
 
 * dp_pre.py  
-    before training make a prediction folder  1_lstm, 2_lstm... (use a different path compared to the path where you save your checkpoints, but same folder name)  
+    before training I will create a prediction folder  1_lstm, 2_lstm... (use a different path compared to the path where you save your checkpoints, but same folder name)  
     chose the best one or best several weights, move them into your prediction folder    
   
  Evaluation Tool
